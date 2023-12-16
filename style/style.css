@@ -24,6 +24,9 @@
     display: flex;
 }
 
+
+
+
 /* NAV */
 
 #main .nav{
@@ -83,6 +86,10 @@
     object-fit: contain;
 }
 
+
+
+
+
 /* SECTION-CONTENT */
 
 #content {
@@ -95,6 +102,16 @@
 .header-content{
     height: 100px;
     background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-content p{
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 /* --FOOTER-- */
