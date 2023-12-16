@@ -1,0 +1,53 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-footer: rgb(40, 40, 40);
+    --color-content: rgb(20, 25, 34);
+    --nav-width: 300px;
+}
+
+/* ---MAIN--- */
+
+#main{
+    display: flex;
+}
+
+/* NAV */
+
+#main .nav{
+    width: var(--nav-width);
+    height: calc(100vh - 100px);
+    background-color: black;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+
+/* SECTION-CONTENT */
+
+#content {
+    width: 100%;
+    background-color: var(--color-content);
+}
+
+/* header-content */
+
+.header-content{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --FOOTER-- */
+
+#footer{
+    height: 100px;
+    background-color: var(--color-footer);
+}
+
+
