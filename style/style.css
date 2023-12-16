@@ -12,6 +12,17 @@
     --nav-width: 250px;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
 /* UTILS */
 
 .flex{
@@ -112,6 +123,44 @@
     border: 1px solid white;
     border-radius: 30px;
     padding: 10px;
+    cursor: pointer;
+}
+
+
+/* MAIN-content */
+
+#main-content{
+    padding: 10px;
+    overflow: scroll;
+}
+
+#main-content .genres{
+    gap: 10px;
+    justify-content: center;
+}
+
+#main-content .genres a{
+    color: gray;
+}
+
+/* album */
+
+#main-content .card{
+    width: calc(100% / 6 -10px);
+    flex: 1;
+}
+
+#main-content .recently-played{
+    gap: 20px;
+}
+
+.card .music-info{
+    color: white;
+    padding-top: 10px;
+}
+
+.container-img-album{
+
 }
 
 /* --FOOTER-- */
