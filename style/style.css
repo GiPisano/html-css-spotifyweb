@@ -121,7 +121,7 @@ body{
 
 .header-content{
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: end;
@@ -131,8 +131,9 @@ body{
     color: white;
     border: 1px solid white;
     border-radius: 30px;
-    padding: 10px;
+    padding: 8px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 
@@ -230,13 +231,61 @@ body{
     align-items: center;
 }
 
-.footer-left{
-    align-content: center;
-}
+/* footer left */
 
 .footer-left img{
     max-width: 40px;
     max-height: 40px;
+    margin: 0 10px;
+}
+
+.footer-left .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-left .center-icon{
+    display: inline-block;
+    margin: 10px;
+}
+
+/* footer center */
+
+.footer-center {
+    min-width: 40%;
+}
+
+.footer-center .options-music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-center .music-time{
+    max-width: 400px;
+}
+
+.footer-center .hr{
+    margin: auto 10px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* footer right */
+
+.footer-right{
+    gap: 10px;
+}
+
+.footer-right .hr{
+    max-width: 80px;
+    min-width: 30px;
+    margin: auto 10px auto 0;
+    height: 3px;
+    border-radius: 3px;
 }
 
 /* MEDIA */
