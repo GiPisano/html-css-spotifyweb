@@ -23,6 +23,12 @@ ul{
 img{
     width: 100%;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
 /* UTILS */
 
 .flex{
@@ -34,9 +40,6 @@ img{
 #main{
     display: flex;
 }
-
-
-
 
 /* NAV */
 
@@ -97,10 +100,6 @@ img{
     object-fit: contain;
 }
 
-
-
-
-
 /* SECTION-CONTENT */
 
 #content {
@@ -146,21 +145,37 @@ img{
 /* album */
 
 #main-content .card{
-    width: calc(100% / 6 -10px);
-    flex: 1;
+    width: calc(100% / 6);
 }
 
 #main-content .recently-played{
-    gap: 20px;
+    gap: 10px;
 }
 
 .card .music-info{
     color: white;
     padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
 }
 
-.container-img-album{
+.card .music-info p:first-child{
+    font-weight: 900;
+}
 
+.card .music-info p:last-child{
+    color: gray;
+    font-size: 12px;
+}
+
+/* FOR-YOU */
+
+.for-you .flex{
+    gap: 10px;
+}
+
+.for-you .flex .card{
+    width: calc(100% / 6);
 }
 
 /* --FOOTER-- */
@@ -168,6 +183,7 @@ img{
 #footer{
     height: 100px;
     background-color: var(--color-footer);
+   
 }
 
 
