@@ -46,9 +46,18 @@ body{
 #main .nav{
     width: var(--nav-width);
     height: calc(100vh - 80px);
-    background-color: black;
-    flex-shrink: 0;
     padding: 30px;
+    background-color: black;
+    color: gray;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: auto;
+}
+
+.nav .white{
     color: white;
 }
 
@@ -70,17 +79,9 @@ body{
     padding: 10px 0;
 }
 
-.square-container{
-    width: 35px;
-    height: 35px;
-    background-color: gray;
-}
-
-.square-container p{
-    font-size: 26px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
+.nav .playlist{
+    line-height: 30px;
+    padding-top: 10px;
 }
 
 .hr{
@@ -97,6 +98,10 @@ body{
     overflow: hidden;
 }
 
+.img-install-app{
+    width: 20px;
+}
+
 .circle-container img{
     border-radius: 50%;
     width: 100%;
@@ -107,6 +112,21 @@ body{
 .nav .profile{
     margin-top: auto;
 }
+
+.nav .text-img-nav{
+    font-size: 12px;
+    padding-left: 10px;
+    
+}
+
+/* HOVER-EFFECT */
+
+.nav .hover:hover,
+.nav .new-playlist p:hover{
+    color: white;
+}
+
+
 
 /* SECTION-CONTENT */
 
@@ -152,6 +172,10 @@ body{
     font-size: 12px;
     padding: 20px;
     font-weight: bold;
+}
+
+#main-content .genres a:hover{
+    color: white;
 }
 
 #main-content .genres a{
@@ -236,7 +260,7 @@ body{
 .footer-left img{
     max-width: 40px;
     max-height: 40px;
-    margin: 0 10px;
+    margin: auto 10px;
 }
 
 .footer-left .center{
@@ -248,6 +272,10 @@ body{
 .footer-left .center-icon{
     display: inline-block;
     margin: 10px;
+}
+
+.footer-left p{
+    font-size: 10px;
 }
 
 /* footer center */
@@ -266,6 +294,7 @@ body{
 
 .footer-center .music-time{
     max-width: 400px;
+    margin: 0 auto;
 }
 
 .footer-center .hr{
