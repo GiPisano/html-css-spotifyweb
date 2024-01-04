@@ -35,6 +35,10 @@ body{
     display: flex;
 }
 
+.white{
+    color: white;
+}
+
 /* ---MAIN--- */
 
 #main{
@@ -43,22 +47,19 @@ body{
 
 /* NAV */
 
-#main .nav{
+.nav{
     width: var(--nav-width);
     height: calc(100vh - 80px);
-    padding: 30px;
     background-color: black;
     color: gray;
     font-weight: bold;
-    
+    font-size: 12px;
+    padding: 1%;
+
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    gap: 2%;
     overflow: auto;
-}
-
-.nav .white{
-    color: white;
 }
 
 #main .nav .logo-nav{
@@ -70,18 +71,17 @@ body{
 }
 
 #main .nav .img-nav{
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
 }
 
 .nav .flex{
     align-items: center;
-    padding: 10px 0;
+    gap: 2%;
 }
 
 .nav .playlist{
     line-height: 30px;
-    padding-top: 10px;
 }
 
 .hr{
@@ -96,10 +96,13 @@ body{
     border-radius: 50%;
     background-color: gray;
     overflow: hidden;
+    margin-right: 4%;
+    
 }
 
 .img-install-app{
-    width: 20px;
+    width: 15px;
+    
 }
 
 .circle-container img{
@@ -113,10 +116,12 @@ body{
     margin-top: auto;
 }
 
-.nav .text-img-nav{
-    font-size: 12px;
-    padding-left: 10px;
-    
+.install-app{
+    margin-bottom: 4%;
+}
+
+.profile-name{
+    margin-top: 4%;
 }
 
 /* HOVER-EFFECT */
@@ -124,6 +129,14 @@ body{
 .nav .hover:hover,
 .nav .new-playlist p:hover{
     color: white;
+}
+
+.hover-icon img{
+    filter: grayscale(100%) brightness(50%);
+}
+
+.hover-icon:hover img{
+    filter: grayscale(0%) brightness(100%);     
 }
 
 
