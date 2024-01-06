@@ -39,12 +39,6 @@ body{
     color: white;
 }
 
-/* ---MAIN--- */
-
-#main{
-    display: flex;
-}
-
 /* NAV */
 
 .nav{
@@ -124,6 +118,10 @@ body{
     margin-top: 4%;
 }
 
+.plus-icon{
+    font-size: 3rem;
+}
+
 /* HOVER-EFFECT */
 
 .nav .hover:hover,
@@ -136,7 +134,7 @@ body{
 }
 
 .hover-icon:hover img{
-    filter: grayscale(0%) brightness(100%);     
+    filter: grayscale(0%) brightness(100%);    
 }
 
 
@@ -147,7 +145,6 @@ body{
     width: 100%;
     height: calc(100vh - 80px);
     background-color: var(--color-content);
-    
 }
 
 /* header-content */
@@ -158,6 +155,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: end;
+    padding-right: 5px;
 }
 
 .header-content p{
@@ -167,6 +165,13 @@ body{
     padding: 8px;
     cursor: pointer;
     font-size: 12px;
+}
+
+/* hover-header-content */
+
+.header-content p:hover{
+    padding: 10px;
+    font-size: 14px;
 }
 
 
@@ -189,6 +194,7 @@ body{
 
 #main-content .genres a:hover{
     color: white;
+    border-bottom: 2px solid greenyellow;
 }
 
 #main-content .genres a{
@@ -232,6 +238,31 @@ body{
     color: gray;
     font-size: 12px;
 }
+
+/* hover play-icon */
+
+.container-img-album{
+    position: relative;
+}
+
+.container-img-album:hover .opacity{
+    opacity: 0.4;
+}
+
+.card .container-img-album .icon-play{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .container-img-album:hover .icon-play{
+    display: inline-block;
+    font-size: 50px;
+}
+
+
 
 /* FOR-YOU */
 
@@ -284,11 +315,25 @@ body{
 
 .footer-left .center-icon{
     display: inline-block;
-    margin: 10px;
+    margin: auto 5px;
 }
 
-.footer-left p{
+.footer-left a{
     font-size: 10px;
+    color: gray;
+}
+
+.icon{
+    color: gray;
+}
+
+.footer-left a:hover{
+    text-decoration:underline;
+    color: white;
+}
+
+.icon:hover{
+    color: white;
 }
 
 /* footer center */
@@ -301,7 +346,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5%;
     padding-bottom: 10px;
 }
 
@@ -310,35 +355,79 @@ body{
     margin: 0 auto;
 }
 
-.footer-center .hr{
-    margin: auto 10px;
-    height: 3px;
-    border-radius: 3px;
+.footer-center .music-time span{
+    font-size: 10px;
 }
+
+.footer-center .hr{
+    margin: auto 4%;
+}
+
+.footer-center .hr,
+.footer-center .hr .progress,
+.footer-right .hr,
+.footer-right .hr{
+    height: 4px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.footer-center .hr .progress,
+.footer-right .hr .progress{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 30%;
+    height: 4px;
+    background-color: white;
+}
+
+.footer-center .hr:hover .progress,
+.footer-right .hr:hover .progress{
+    background-color: greenyellow;
+}
+
+.footer-center .hr:hover .progress::after,
+.footer-right .hr:hover .progress::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-play-option{
+    font-size: 25px;
+}
+
+
 
 /* footer right */
 
 .footer-right{
     gap: 10px;
+    width: 200px; 
+    margin-left: 10px;
 }
 
 .footer-right .hr{
-    max-width: 80px;
-    min-width: 30px;
-    margin: auto 10px auto 0;
-    height: 3px;
-    border-radius: 3px;
+    margin: auto 3px auto 0;
 }
+
 
 /* MEDIA */
 
 
 @media screen and (max-width: 768px) {
-    #main-content .genres{
-        flex-wrap: wrap;
-    }
-
-    #main-content .recently-played{
+    #main-content .genres,
+    #main-content .recently-played
+    {
         flex-wrap: wrap;
     }
 
@@ -363,15 +452,10 @@ body{
         padding: 10px;
     }
 
-    .nav .text-img-nav{
-        display: none;
-    }
-
-    .nav .playlist{
-        display: none;
-    }
-
-    #main .nav .logo-nav img:first-child{
+    .nav .text-img-nav,
+    .nav .playlist,
+    #main .nav .logo-nav img:first-child,
+    #main .nav .hr{
         display: none;
     }
 
@@ -380,9 +464,23 @@ body{
         width: 30px;
     }
 
-    #main .nav .hr{
-        display: none;
+    .img-install-app{
+        margin: 5px ;
+    }
+
+    .footer-right{
+        flex-wrap: wrap;
+        width: 100px;
+    }
+
+    .footer-right hr{
+        margin: auto 0;
     }
 }
 
 
+@media screen and (max-width: 380px) {
+    .footer-left .center-icon{
+        display: none;
+    }
+}

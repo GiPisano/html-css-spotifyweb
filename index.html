@@ -24,7 +24,7 @@
 
 <body>
     <!-- MAIN -->
-    <main id="main">
+    <main id="main" class="flex">
 
         <!-- NAV -->
         <section class="nav">
@@ -53,7 +53,7 @@
                 <h3 class="hover white">PLAYLIST</h3>
                 <div class="new-playlist">
                     <div class="flex hover">
-                        <i class="fa-solid fa-square-plus fa-2xl"></i>
+                        <i class="fa-solid fa-square-plus plus-icon"></i>
                         <p>Crea Playlist</p>
                     </div>
 
@@ -70,9 +70,7 @@
             <div class="profile hover">
 
                 <div class="flex install-app hover-icon">
-                    <div class="img-install-app">
-                        <img src="./img/download.svg" alt="">
-                    </div>
+                    <img src="./img/download.svg" alt="" class="img-install-app">
                     <p class="text-img-nav">Installa app</p>
                 </div>
 
@@ -137,7 +135,8 @@
 
                     <div class="card">
                         <div class="container-img-album">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <img src="./img/metal_lifting.jpg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
                         <div class="music-info">
                             <p>Heavy Metal</p>
@@ -146,9 +145,9 @@
                     </div>
 
                     <div class="card">
-
                         <div class="container-img-album">
-                            <img src="./img/stranger.jpeg" alt="">
+                            <img src="./img/stranger.jpeg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
 
                         <div class="music-info">
@@ -159,7 +158,8 @@
 
                     <div class="card">
                         <div class="container-img-album">
-                            <img src="./img/aquietplace.jpeg" alt="">
+                            <img src="./img/aquietplace.jpeg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
                         <div class="music-info">
                             <p>A quiet place</p>
@@ -169,7 +169,8 @@
 
                     <div class="card">
                         <div class="container-img-album">
-                            <img src="./img/split.jpeg" alt="">
+                            <img src="./img/split.jpeg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
                         <div class="music-info">
                             <p>Split</p>
@@ -179,7 +180,8 @@
 
                     <div class="card">
                         <div class="container-img-album">
-                            <img src="./img/cure.jpeg" alt="">
+                            <img src="./img/cure.jpeg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
                         <div class="music-info">
                             <p>A cure for wellness</p>
@@ -189,7 +191,8 @@
 
                     <div class="card">
                         <div class="container-img-album">
-                            <img src="./img/sinister.jpeg" alt="">
+                            <img src="./img/sinister.jpeg" class="opacity" alt="">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
                         </div>
                         <div class="music-info">
                             <p>Sinister</p>
@@ -206,7 +209,8 @@
                     <div class="flex">
                         <div class="card">
                             <div class="container-img-album">
-                                <img src="./img/radar.jpeg" alt="">
+                                <img src="./img/radar.jpeg" class="opacity" alt="">
+                                <i class="fa-regular fa-circle-play icon-play"></i>
                             </div>
                             <div class="music-info">
                                 <p>Release Radar</p>
@@ -215,7 +219,8 @@
 
                         <div class="card">
                             <div class="container-img-album">
-                                <img src="./img/mixdaily.jpeg" alt="">
+                                <img src="./img/mixdaily.jpeg" class="opacity" alt="">
+                                <i class="fa-regular fa-circle-play icon-play"></i>
                             </div>
                             <div class="music-info">
                                 <p>Daily Mix 1</p>
@@ -258,11 +263,11 @@
             <img src="./img/sinister.jpeg" alt="">
             <div class="center">
                 <h5>Sinister</h6>
-                    <p>Brano Nome</p>
+                    <a>Brano Nome</a>
             </div>
             <div class="center-icon">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart icon"></i>
+                <i class="fa-regular fa-folder icon"></i>
             </div>
         </div>
 
@@ -271,14 +276,16 @@
             <div class="options-music">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play fa-xl"></i>
+                <i class="fa-regular fa-circle-play icon-play-option"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
 
             <div class="flex music-time">
                 <span>0:25</span>
-                <div class="hr"></div>
+                <div class="hr">
+                    <div class="progress"></div>
+                </div>
                 <span>4:35</span>
             </div>
         </div>
@@ -287,7 +294,9 @@
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <div class="hr"></div>
+            <div class="hr">
+                <div class="progress"></div>
+            </div>
         </div>
 
 
