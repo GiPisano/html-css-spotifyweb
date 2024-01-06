@@ -405,7 +405,9 @@ body{
     font-size: 25px;
 }
 
-
+.icon-play-option:hover{
+    transform: scale(1.2);
+}
 
 /* footer right */
 
