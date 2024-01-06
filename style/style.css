@@ -9,7 +9,6 @@
 :root{
     --color-footer: rgb(40, 40, 40);
     --color-content: rgb(20, 25, 34);
-    --nav-width: 250px;
 }
 
 a{
@@ -42,7 +41,7 @@ body{
 /* NAV */
 
 .nav{
-    width: var(--nav-width);
+    width: 250px;
     height: calc(100vh - 80px);
     background-color: black;
     color: gray;
@@ -450,6 +449,7 @@ body{
     #main .nav{
         width: 50px;
         padding: 10px;
+        overflow: unset;
     }
 
     .nav .text-img-nav,
